@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'myawwards',
     'bootstrap3',
     'cloudinary',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
