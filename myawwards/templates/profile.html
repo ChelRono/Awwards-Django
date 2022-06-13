@@ -1,16 +1,27 @@
 
-{% load crispy_forms_tags %}
-{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Profile</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
     <div class="content-section">
       <div class="media">
-        <img class="rounded-circle account-img" src="{{ user.profile.profile_picture.url }}">
+        <img class="rounded-circle account-img" src="{{ user.profile.profile_picture.url }}" width="304" height="236">
         <div class="media-body">
-          <h2 class="account-heading">{{ user.username }}</h2>
-          <p class="text-secondary">{{ user.bio }}</p>
+          <h2 class="account-heading">{{ user.profile.user }}</h2>
+          <p class="text-secondary">{{ user.profile.bio }}</p>
         </div>
       </div>
      
-    
+      <Button class="bg-danger"><a href="/">Edit your profile</a></Button>
     </div>
 
-{% endblock content %}
+  
+
