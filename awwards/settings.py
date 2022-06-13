@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 import os
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -40,7 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'myawwards',
     'bootstrap3',
-    'Cloudinary',
+    'cloudinary',
 ]
 
 MIDDLEWARE = [
@@ -82,7 +85,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'awwards',
         'USER': 'valarie',
-    'PASSWORD':'',
+    'PASSWORD':'password',
     }
 }
 
@@ -126,7 +129,16 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media') # Directory where uploaded media is saved.
+MEDIA_URL = '/media/' # Public URL at the browser
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+cloudinary.config( 
+  cloud_name = "dp9adanrj", 
+  api_key = "395122225181696", 
+  api_secret = "zO6MrRpwzoRPFoaFnkgFYmLf-xg" 
+)
