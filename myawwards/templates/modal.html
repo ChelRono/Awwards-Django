@@ -1,0 +1,49 @@
+     <!-- Modal -->
+     <div class="modal fade" id="myModal{{post.id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="#{{post.title}}">{{post.title}}</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div>
+            <img src = "{{post.photo.url}}" class="img-fluid" alt="{{post.title}}"/>
+          </div>
+          <div class="modal-body">{{post.description}}</div>
+          <div class="modal-body">URL: {{post.url}}</div>
+          
+          <div class="modal-footer">
+        
+            <button type="button" class="btn btn-info" value="{{ post.url }}" onclick="copyURL(this.value)">Copy URL</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+        </div>
+        </div>
+        <script>
+        function copyURL(value){
+        function handler(event){
+        event.clipboardData.setData('text/plain',value);
+        event.preventDefault();
+        document.removeEventListener('copy',handler, true);
+        }
+        document.addEventListener('copy', handler, true);
+        document.execCommand('copy');
+        }
+        </script>
+              {% empty %}
+              <h3>The Site is still empty!</h3>
+        
+              
+            {% endfor %}
+        
+        
+        </div>
+            </div>
+        </div>
+        
+        
+        
+        

@@ -22,3 +22,15 @@ def create_profile(sender, instance, created, **kwargs):
 @receiver(post_save, sender=User)
 def save_profile(sender, instance, **kwargs):
     instance.profile.save()
+
+class Post(models.Model):
+    title = models.CharField(max_length=155)
+    url = models.URLField(max_length=255)
+    description = models.TextField(max_length=255)
+    photo = CloudinaryField('picture' ,null='True')
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="posts")
+    date = models.DateTimeField(auto_now_add=True, blank=True)
+
+    def __str__(self):
+        return f'{self.title}'
+

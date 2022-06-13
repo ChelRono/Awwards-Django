@@ -10,7 +10,7 @@ class UserUpdateForm(forms.ModelForm):
 
     class Meta:
         model = User
-        fields = ['username', 'bio']
+        fields = ['username', 'email']
 
 # Create a ProfileUpdateForm to update image
 class ProfileUpdateForm(forms.ModelForm):

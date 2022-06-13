@@ -1,4 +1,5 @@
 from django.shortcuts import render,redirect
+from myawwards.models import Post
 from .forms import  UserUpdateForm, ProfileUpdateForm
 from django.contrib import messages
 
@@ -7,6 +8,12 @@ from django.contrib import messages
 def index(request):
 
    return render(request, 'index.html')
+
+def post(request):
+
+   posts=Post.objects.all()
+
+   return render(request, 'POST/body.html',{'posts':posts})
 
 
 def profile(request):
