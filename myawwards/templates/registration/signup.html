@@ -15,16 +15,21 @@
         </div>
         <div class="panel-body">
 
-          <form  action="/accounts/register/" method="post">
-            {% csrf_token %}
-            {% bootstrap_form form %}
-            <div class="form-group">
-              <input type="submit" class="btn btn-primary btn-sm" value="Sign Up">
-            </div>
+          
+<form action="" method="POST">
+  {% csrf_token %}
 
-            <input type="hidden" name="next" value="{{next}}">
+  {% for field in form %}
+      <div>
+          <p>{{ field.label }}: <br> {{ field }}</p> 
 
-          </form>
+          {% for error in field.errors %}
+              <small style="color: red">{{ error }}</small>
+          {% endfor %}
+      </div>
+  {% endfor %}
+  <button type="submit">Register</button>
+
 
         </div>
 
