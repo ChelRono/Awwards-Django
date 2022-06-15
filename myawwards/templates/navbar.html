@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,10 +30,8 @@
       <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
              aria-haspopup="true"
-             aria-expanded="false">{{ user.username|title }} <img class="rounded-circle nav-img"
-                                                                  src="{{ user.profile.profile_picture.url }}"
-                                                                  alt="">
-          </a>
+             aria-expanded="false">{{ user.username|title }} 
+         
           <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
               
               <hr>
@@ -44,9 +43,7 @@
       {% else %}
       <a href="{% url 'login' %}" class="login btn btn-sm btn-info"> REGISTER/LOGIN </a>
       {% endif %}
-      <button class="btn btn-info btn-sm" id="site" data-toggle="modal" data-target=".bd-example-modal-xl">
-          Submit your site
-      </button>
+     
   </ul>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="{% url 'signup' %}"><span class="glyphicon glyphicon-user"></span> </a></li>

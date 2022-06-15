@@ -1,10 +1,11 @@
 from django.shortcuts import render,redirect
 from myawwards.models import Post
-from .forms import SignupForm, UpdateUserForm,UpdateUserProfileForm
+from .forms import SignupForm, UpdateUserForm,UpdateUserProfileForm,PostForm
 from django.contrib.auth.models import User
 from django.contrib.auth import login, authenticate
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+import random
 
 # Create your views here.
 
@@ -70,3 +71,17 @@ def search_project(request):
     else:
         message = "You haven't searched for any image category"
     return render(request, 'results.html', {'message': message})
+
+def addpost(request):
+
+    if request.method == "POST":
+        form = PostForm(request.POST)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.user = request.user
+            post.save()
+    else:
+        form = PostForm()
+
+    
+    return render(request, 'add.html', {'form': form })

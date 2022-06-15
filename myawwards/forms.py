@@ -1,7 +1,8 @@
 from django import forms
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
-from .models import Profile
+from .models import Profile,Post
+from cloudinary.models import CloudinaryField
 
 
 # Create a UserUpdateForm to update username and email
@@ -38,3 +39,12 @@ class UpdateUserProfileForm(forms.ModelForm):
     class Meta:
         model = Profile
         fields = ['user', 'profile_picture', 'bio']
+
+
+
+class PostForm(forms.ModelForm):
+    photo = CloudinaryField('picture' ,null='True')
+
+    class Meta:
+        model = Post
+        fields = ( 'title', 'url', 'description','photo', 'user')
