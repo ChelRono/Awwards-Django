@@ -1,9 +1,8 @@
 from django.shortcuts import render,redirect
-from myawwards.models import Post, Rating
+from .models import Post, Rating,Profile
 from .forms import SignupForm, UpdateUserForm,UpdateUserProfileForm,PostForm,RatingsForm
 from django.contrib.auth.models import User
 from django.contrib.auth import login, authenticate
-from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect
 
@@ -88,9 +87,9 @@ def addpost(request):
 
 
 @login_required(login_url='login')
-def rating(request, post):
-    post = Post.objects.get(title=post)
-    ratings = Rating.objects.filter(user=request.user, post=post).first()
+def rating(request):
+   
+    ratings = Rating.objects.filter(user=request.user).first()
     rating_status = None
     if ratings is None:
         rating_status = False

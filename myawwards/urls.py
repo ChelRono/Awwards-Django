@@ -11,6 +11,6 @@ urlpatterns=[
     url('update', views.edit_profile, name='edit_profile'),
     url('search/', views.search_project, name='search'),
     url('add', views.addpost, name='add'),
-    url('rating', views.rating, name='rating'),
+    url('rating/<post>/', views.rating, name='rating'),
     
 ]
