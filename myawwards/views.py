@@ -88,7 +88,7 @@ def addpost(request):
 
 
 @login_required(login_url='login')
-def project(request, post):
+def rating(request, post):
     post = Post.objects.get(title=post)
     ratings = Rating.objects.filter(user=request.user, post=post).first()
     rating_status = None
@@ -130,4 +130,4 @@ def project(request, post):
         'rating_status': rating_status
 
     }
-    return render(request, 'project.html', params)
+    return render(request, 'rating.html', params)
