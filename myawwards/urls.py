@@ -1,5 +1,9 @@
 from django.urls import re_path as url,include
 from . import views  
+from rest_framework import routers
+
+router = routers.DefaultRouter()
+router.register('profile', views.ProfileViewSet)
 
 
 urlpatterns=[
@@ -12,5 +16,6 @@ urlpatterns=[
     url('search/', views.search_project, name='search'),
     url('add', views.addpost, name='add'),
     url('rating/<post>/', views.rating, name='rating'),
+    url('api/', include(router.urls)),
     
 ]

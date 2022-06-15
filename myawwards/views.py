@@ -5,6 +5,8 @@ from django.contrib.auth.models import User
 from django.contrib.auth import login, authenticate
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect
+from .serializers import ProfileSerializer
+from rest_framework import viewsets
 
 # Create your views here.
 
@@ -130,3 +132,8 @@ def rating(request):
 
     }
     return render(request, 'rating.html', params)
+
+
+class ProfileViewSet(viewsets.ModelViewSet):
+    queryset = Profile.objects.all()
+    serializer_class = ProfileSerializer
