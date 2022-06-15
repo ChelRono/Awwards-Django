@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect
-from myawwards.models import Post
-from .forms import SignupForm, UpdateUserForm,UpdateUserProfileForm,PostForm
+from myawwards.models import Post, Rating
+from .forms import SignupForm, UpdateUserForm,UpdateUserProfileForm,PostForm,RatingsForm
 from django.contrib.auth.models import User
 from django.contrib.auth import login, authenticate
 from django.contrib import messages
