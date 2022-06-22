@@ -63,10 +63,3 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-## BEHAVIOUR DRIVEN DEVELOPMENT
-| Behaviour                    | Input                     | Output     |
-| ---------------              | -------------             | -------- |
-| Signup to the application    | Click on Signup           | A sign up page appears with a sign up form  |
-| Login to the site            | Click on Log in           | Redirected to the login page with a login form  |
-| Search in the search field   | Input keywords            |Search page is loaded and displays with the searched results|H 
-| View profile                 | click username            |Redirects to profile page with an option to edit profile
