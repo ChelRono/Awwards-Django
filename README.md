@@ -67,6 +67,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 # LEA MTOTO
 
+## LAYOUT
+
+[![Screenshot-from-2022-06-22-15-35-26.png](https://i.postimg.cc/qMSSq5rS/Screenshot-from-2022-06-22-15-35-26.png)](https://postimg.cc/YhNby8hz)
+
 ## AUTHORS
 <li> Martin Misigo</li>
 <li> Julia Mwangi</li>
@@ -76,9 +80,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 <li> Oliver Maiyo</li>
 <li> Ludwig Murimi</li>
 
-## LAYOUT
-
-[![Screenshot-from-2022-06-22-15-35-26.png](https://i.postimg.cc/qMSSq5rS/Screenshot-from-2022-06-22-15-35-26.png)](https://postimg.cc/YhNby8hz)
 
 ## DESCRIPTION
 Lea Mtoto is an application that connects needy students to donors.The needy students who lack school fees, books and uniforms are able to get willing donors who sponsor them to enable them complete their studies.
