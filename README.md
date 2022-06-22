@@ -68,13 +68,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 # LEA MTOTO
 
 ## AUTHORS
-###### Martin Misigo
-###### Julia Mwangi
-###### Andre Kauelana
-###### Valarie Rono
-###### Nimrod Musungu
-###### Oliver Maiyo
-###### Ludwig Murimi
+<li> Martin Misigo</li>
+<li> Julia Mwangi</li>
+<li> Andre Kauelana</li>
+<li> Valarie Rono</li>
+<li>Nimrod Musungu</li>
+<li> Oliver Maiyo</li>
+<li> Ludwig Murimi</li>
 
 ## LAYOUT
 
@@ -88,8 +88,8 @@ As a user of the application you will be able to:
 <ul>
 <li>1.See all the listed children in the website.</li>
 <li>2.You will be able to view the background details of the children i.e age,school,grades etc.</li>
-3.You will also see the financial need a student needs i.e school fees,uniform or books.
-4.Subscribe to get news about the students
+<li>3.You will also see the financial need a student needs i.e school fees,uniform or books.</li>
+<li>4.Subscribe to get news about the students.</li>
 </ul>
 
 ## BEHAVIOUR DRIVEN DEVELOPMENT
@@ -103,15 +103,19 @@ As a user of the application you will be able to:
 ## GETTING STARTED
 
 ### PREREQUISITES
--python
--virtual environment
--django
+<ul>
+<li>1.python</li>
+<li>2.virtual environment</li>
+<li>3.django</li>
+</ul>
 
 ### TECHNOLOGIES
--BackEnd: * Python * Django
--FrontEnd: * HTML * CSS * JavaScript * Bootstrap
--Database * PostgreSQL
--Deployment * Heroku
+<ul>
+<li>1.BackEnd: * Python * Django</li>
+<li>2.FrontEnd: * HTML * CSS * JavaScript * Bootstrap</li>
+<li>3.Database * PostgreSQL</li>
+<li>4.Deployment * Heroku</li>
+</ul>
 
 ### INSTALLATION
 To get the code..
@@ -139,14 +143,15 @@ Open the application on your browser 127.0.0.1:8000.
 Want to contribute? Great!
 
 To fix a bug or enhance an existing module, follow these steps:
-
--Fork the repo
--Create a new branch (git checkout -b improve-feature)
--Make the appropriate changes in the files
--Add changes to reflect the changes made
--Commit your changes (git commit -am 'Improve feature')
--Push to the branch (git push origin improve-feature)
--Create a Pull Request
+<ul>
+<li>1.Fork the repo</li>
+<li>2.Create a new branch (git checkout -b improve-feature)</li>
+<li>3.Make the appropriate changes in the files</li>
+<li>4.Add changes to reflect the changes made</li>
+<li>5.Commit your changes (git commit -am 'Improve feature')</li>
+<li>6.Push to the branch (git push origin improve-feature)</li>
+<li>7.Create a Pull Request</li>
+</ul>
 
 ## Known bugs
 If you find a bug, kindly open an issue here by including your search query and the expected result.
