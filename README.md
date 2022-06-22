@@ -86,10 +86,10 @@ Lea Mtoto is an application that connects needy students to donors.The needy stu
 ## FEATURES
 As a user of the application you will be able to:
 <ul>
-<li>1.See all the listed children in the website.</li>
-<li>2.You will be able to view the background details of the children i.e age,school,grades etc.</li>
-<li>3.You will also see the financial need a student needs i.e school fees,uniform or books.</li>
-<li>4.Subscribe to get news about the students.</li>
+<li>See all the listed children in the website.</li>
+<li>You will be able to view the background details of the children i.e age,school,grades etc.</li>
+<li>You will also see the financial need a student needs i.e school fees,uniform or books.</li>
+<li>Subscribe to get news about the students.</li>
 </ul>
 
 ## BEHAVIOUR DRIVEN DEVELOPMENT
@@ -104,17 +104,17 @@ As a user of the application you will be able to:
 
 ### PREREQUISITES
 <ul>
-<li>1.python</li>
-<li>2.virtual environment</li>
-<li>3.django</li>
+<li>python</li>
+<li>virtual environment</li>
+<li>django</li>
 </ul>
 
 ### TECHNOLOGIES
 <ul>
-<li>1.BackEnd: * Python * Django</li>
-<li>2.FrontEnd: * HTML * CSS * JavaScript * Bootstrap</li>
-<li>3.Database * PostgreSQL</li>
-<li>4.Deployment * Heroku</li>
+<li>BackEnd: * Python * Django</li>
+<li>FrontEnd: * HTML * CSS * JavaScript * Bootstrap</li>
+<li>Database * PostgreSQL</li>
+<li>Deployment * Heroku</li>
 </ul>
 
 ### INSTALLATION
@@ -144,13 +144,13 @@ Want to contribute? Great!
 
 To fix a bug or enhance an existing module, follow these steps:
 <ul>
-<li>1.Fork the repo</li>
-<li>2.Create a new branch (git checkout -b improve-feature)</li>
-<li>3.Make the appropriate changes in the files</li>
-<li>4.Add changes to reflect the changes made</li>
-<li>5.Commit your changes (git commit -am 'Improve feature')</li>
-<li>6.Push to the branch (git push origin improve-feature)</li>
-<li>7.Create a Pull Request</li>
+<li>Fork the repo</li>
+<li>Create a new branch (git checkout -b improve-feature)</li>
+<li>Make the appropriate changes in the files</li>
+<li>Add changes to reflect the changes made</li>
+<li>Commit your changes (git commit -am 'Improve feature')</li>
+<li>Push to the branch (git push origin improve-feature)</li>
+<li>Create a Pull Request</li>
 </ul>
 
 ## Known bugs
