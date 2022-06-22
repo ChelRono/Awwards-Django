@@ -85,11 +85,12 @@ Lea Mtoto is an application that connects needy students to donors.The needy stu
 
 ## FEATURES
 As a user of the application you will be able to:
-
-1.See all the listed children in the website.
-2.You will be able to view the background details of the children i.e age,school,grades etc.
+<ul>
+<li>1.See all the listed children in the website.</li>
+<li>2.You will be able to view the background details of the children i.e age,school,grades etc.</li>
 3.You will also see the financial need a student needs i.e school fees,uniform or books.
 4.Subscribe to get news about the students
+</ul>
 
 ## BEHAVIOUR DRIVEN DEVELOPMENT
 | Behaviour                    | Input                     | Output     |
