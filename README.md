@@ -68,7 +68,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 | ---------------              | -------------             | -------- |
 | Signup to the application    | Click on Signup           | A sign up page appears with a sign up form  |
 | Login to the site            | Click on Log in           | Redirected to the login page with a login form  |
-| Search in the search field   | Input keywords to be      |Search page is loaded and displays with the searched results|
+   | Input keywords to be searched     |Search page is loaded and displays with the searched results|
                                  searched then click SEARCH 
 | View profile                 | click username            |Redirects to profile page with an option to edit profile
 |                              |                  |
